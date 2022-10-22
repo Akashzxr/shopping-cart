@@ -1,0 +1,80 @@
+h1,h2{
+display: inline-block;
+ margin: 0px ;
+ padding: 0px;
+}
+
+.home-contents{
+    display: grid;
+    grid-template-rows: 1fr 0.6fr 1fr;
+}
+
+
+.home-main-img{
+    width: 100%;
+    grid-row: 1/2;
+}
+
+.qoute1{
+    font-family: 'Noto Sans', sans-serif;
+    color: #f9da3c;
+    font-size: 10vw;
+}
+
+.qoute2{
+    font-family: 'Londrina Outline', cursive;
+    color: #f9da3c;
+    letter-spacing: 30px;
+    
+    font-size: 13vw;
+}
+
+.home-qoute{
+   grid-row: 2/3;
+   justify-self: start;
+   align-self: start;
+   margin-left: 2%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+}
+
+.home-middle{
+    display: flex;
+    grid-row: 3/4;
+    flex-direction: column;
+}
+
+.home-footer{
+    width: 100%;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.home-side-img{
+  position: relative;
+  top: 22%;
+  left: 20%;
+  right: 40%;
+  z-index: -1;
+  width: 80%;
+}
+
+.home-footer-img{
+    width: 100%;
+    position: relative;
+}
+
+.shop-button{
+    position: relative;
+    margin-left: 5%;
+    height: 9vw;
+    width: 50%;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    font-size: 6vw;
+}

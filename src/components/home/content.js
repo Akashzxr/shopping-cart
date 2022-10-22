@@ -13,7 +13,7 @@ const Contents=()=>{
             </div>
 
             <div className="home-middle">
-                <button className="shop-button">SHOP NOW</button>
+                <button className="shop-button hover:bg-gray-600">SHOP NOW</button>
            
   
             <div className="home-footer">

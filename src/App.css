@@ -4,10 +4,17 @@ body{
   height: 100%;
 }
 
+.heading {
+  position:absolute;
+  z-index: 1;
+  background: transparent;
+  width: 100%;
+  padding: 10px;
+  font-size: 2vw;
+}
 
-
-.heading h2{
-  display: inline;
+.main-text{
+  font-size: 3vw;
 }
 
 .App {

@@ -3,6 +3,7 @@ import App from "./App";
 import Home from "./components/home/Home";
 import Products from "./components/shopping/products";
 import Heading from "./components/Heading";
+import Cart from "./components/cart/cart";
 
 const RouteSwitch=()=>{
     return(
@@ -12,6 +13,7 @@ const RouteSwitch=()=>{
             <Route path="/home" element={<Home/>} />
             <Route path="/products" element={<Products/>} />
             <Route path="/heading" element={<Heading/>} />
+            <Route path="/cart" element={<Cart/>} />
         </Routes>
         </BrowserRouter>
     )

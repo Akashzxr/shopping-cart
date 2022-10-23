@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 const Heading=(props)=>{
+    const count = useSelector((state)=>state.cart.count)
     return(
         <div className="heading flex justify-between" style={{position: `${props.position}`}} >
            <div style={{color: `${props.color}`}} className="main-text" >NEW FASHION</div>
@@ -12,7 +14,7 @@ const Heading=(props)=>{
                hover:scale-110 duration-300 ..."><Link to="/products">PRODUCTS</Link></div>
               <div className="cart-btn 
               transition ease-in-out delay-150 hover:-translate-y-1 
-              hover:scale-110 duration-300 ..." ><Link >CART</Link></div>
+              hover:scale-110 duration-300 ..." ><Link to="/cart" >CART{count}</Link></div>
            </div>
         </div>
     )

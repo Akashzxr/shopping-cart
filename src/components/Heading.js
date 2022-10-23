@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const Heading=(props)=>{
     return(
-        <div className="heading flex justify-between">
+        <div className="heading flex justify-between" style={{position: `${props.position}`}} >
            <div style={{color: `${props.color}`}} className="main-text" >NEW FASHION</div>
            <div className="heading-icons flex gap-10" style={{color: `${props.icon}`}}>
               <div className="home-btn 

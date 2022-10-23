@@ -24,6 +24,9 @@
 
 .items{
     margin-left: 5%;
+    display: flex;
+    gap: 10%;
+    flex-wrap: wrap;
 }
 
 .add-btn{

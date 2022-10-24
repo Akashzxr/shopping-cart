@@ -20,3 +20,18 @@ body{
   text-align: center;
 }
 
+.cart-btn{
+  display:flex;
+}
+
+.count{
+  font-size: 70%;
+  font-weight: bolder;
+  align-self: center;
+  text-align: center;
+  background-color: red;
+  color:white;
+  border-radius: 50px;
+  height: 2vw;
+  width: 2vw;
+}

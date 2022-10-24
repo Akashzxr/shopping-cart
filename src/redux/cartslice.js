@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const INITIAL_STATE ={
     count : 0,
+    title:[],
 }
 
 export const cartSlice = createSlice({
@@ -10,12 +11,15 @@ export const cartSlice = createSlice({
   reducers: {
     increment:(state)=>{
         state.count+=1;
-    }
+    },
+    details:(state,action)=>{
+      state.title.push(action.payload);
+    },
   },
 });
 
 
-export const { increment } = cartSlice.actions;
+export const { increment,details } = cartSlice.actions;
 
 
 export default cartSlice.reducer;

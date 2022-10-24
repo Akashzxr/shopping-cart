@@ -1,4 +1,5 @@
 import { BrowserRouter,Route,Routes } from "react-router-dom";
+import { HashRouter } from 'react-router-dom'
 import App from "./App";
 import Home from "./components/home/Home";
 import Products from "./components/shopping/products";
@@ -7,7 +8,7 @@ import Cart from "./components/cart/cart";
 
 const RouteSwitch=()=>{
     return(
-        <BrowserRouter basename={process.env.PUBLIC_URL} >
+        <HashRouter>
         <Routes>
             <Route path="/" element={<App/>} />
             <Route path="/home" element={<Home/>} />
@@ -15,7 +16,7 @@ const RouteSwitch=()=>{
             <Route path="/heading" element={<Heading/>} />
             <Route path="/cart" element={<Cart/>} />
         </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 

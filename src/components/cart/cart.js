@@ -14,7 +14,7 @@ const count = useSelector((state)=>state.cart.count)
         <Heading color={"black"} icon={"black"} position={"relative"}/>
 
         {count>0 ?
-        <div className="flex flex-wrap gap-12 cart-card-section" >
+        <div className="cart-card-section" >
             {title.map((info)=>{
                 return(
                     <CartCard key={info.info.id} details={info.info} />

@@ -7,7 +7,7 @@ import Cart from "./components/cart/cart";
 
 const RouteSwitch=()=>{
     return(
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL} >
         <Routes>
             <Route path="/" element={<App/>} />
             <Route path="/home" element={<Home/>} />

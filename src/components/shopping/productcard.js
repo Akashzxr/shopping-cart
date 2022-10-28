@@ -2,6 +2,7 @@ import React,{useState} from "react"
 import { increment,details } from "../../redux/cartslice";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
+import { totalprice } from "../../redux/cartslice";
 
 const ProductCard=(props)=>{
         const title=useSelector((state)=>state.cart.title);
@@ -10,6 +11,7 @@ const ProductCard=(props)=>{
 
         const click=()=>{
                 dispatch(details(props));
+                dispatch(totalprice(props));
         }
         
     return(

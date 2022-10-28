@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const INITIAL_STATE ={
     count : 0,
     title:[],
-    quantity:[],
+    totalprice:0,
 }
 
 export const cartSlice = createSlice({
@@ -32,11 +32,20 @@ export const cartSlice = createSlice({
        }
        console.log(state.title[0].info.quantity);
     },
+    totalprice:(state,action)=>{
+      const length=state.title.length;
+      let id = action.payload.info.id;
+      for(let i=0;i<length;i++){
+          if(state.title[i].info.id===id){
+            state.totalprice+=state.title[i].info.price;
+          }
+        }
+    }
   },
 });
 
 
-export const { increment,details } = cartSlice.actions;
+export const { increment,details,totalprice } = cartSlice.actions;
 
 
 export default cartSlice.reducer;

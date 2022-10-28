@@ -7,7 +7,8 @@ import './cart.css'
 const Cart=()=>{
 
 const title = useSelector((state)=>state.cart.title) 
-const count = useSelector((state)=>state.cart.count)    
+const count = useSelector((state)=>state.cart.count)   
+const totalprice = useSelector((state)=>state.cart.totalprice);
 
     return(
         <div className="cart">
@@ -22,7 +23,8 @@ const count = useSelector((state)=>state.cart.count)
             })}
         </div>
         :<div>no items here</div> }
-
+       
+       <div>TOTALPRICE:{totalprice}</div>
     </div>
     )
 }

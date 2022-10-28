@@ -5,16 +5,11 @@ import { useSelector } from "react-redux";
 
 const ProductCard=(props)=>{
         const title=useSelector((state)=>state.cart.title);
+         props.info['quantity']=1;
         const dispatch = useDispatch();
-        const [count,setcount]=useState(0);
 
         const click=()=>{
-            setcount(count+=1);
-            if(count==0){
                 dispatch(details(props));
-                dispatch(increment())
-                console.log(title)
-            }
         }
         
     return(

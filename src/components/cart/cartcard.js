@@ -13,6 +13,7 @@ const CartCard=(props)=>{
             <div className="info">
                <div className="font-extrabold title">{props.details.title}</div>
                <div className="font-extralight">${props.details.price}</div>
+               <div>quantity: {props.details.quantity}</div>
             </div>
             
         </div>

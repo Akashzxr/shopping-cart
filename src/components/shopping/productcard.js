@@ -6,7 +6,13 @@ import { totalprice } from "../../redux/cartslice";
 
 const ProductCard=(props)=>{
         const title=useSelector((state)=>state.cart.title);
-         props.info['quantity']=1;
+         //props.info['quantity']=1;
+         Object.defineProperties(props.info,{
+            quantity:{
+                value: 1,
+                writable: true
+            }
+         })
         const dispatch = useDispatch();
 
         const click=()=>{
